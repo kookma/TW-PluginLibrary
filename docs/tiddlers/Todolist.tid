@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-Todolist
+created: 20200306123431465
+demo: https://kookma.github.io/TW-Todolist/
+modified: 20210226053334130
+name: Todolist
+tags: plugin
+title: Todolist
+type: text/vnd.tiddlywiki
+
+Todolist is a tiny Tiddlywiki plugin for creating simple todolist. In any tiddler you wish to have the Todolist simply call `todolist-ui` macro. Details are given below.

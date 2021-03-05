@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-Utility
+created: 20200306123438859
+demo: https://kookma.github.io/TW-Utility/
+modified: 20210226053547351
+name: Utility
+tags: plugin
+title: Utility
+type: text/vnd.tiddlywiki
+
+Utility plugin is a small set of stylesheets, templates and macros. It has different tools for customizing and authoring specially for developers.

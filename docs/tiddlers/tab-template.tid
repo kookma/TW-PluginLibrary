@@ -1,0 +1,18 @@
+created: 20210226052547578
+modified: 20210226053011751
+tags: 
+title: tab-template
+type: text/vnd.tiddlywiki
+
+<$tiddler tiddler=<<currentTab>>>
+
+!! {{!!name}}
+
+{{!!text}}
+
+!! Code and demo
+* {{!!code}}
+* {{!!demo}}
+
+</$tiddler>
+

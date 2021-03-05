@@ -1,0 +1,30 @@
+{
+	"description": "Kookma Plugin Library",
+	"plugins": [
+		"tiddlywiki/pluginlibrary",
+        "kookma/commander",
+        "kookma/favorites",
+        "kookma/pinboard",
+        "kookma/searchwikis",
+        "kookma/shiraz",
+        "kookma/slider",
+        "kookma/solution",	
+        "kookma/toc",		
+        "kookma/todolist",		
+        "kookma/trashbin",	
+        "kookma/utility"	
+	],
+	"themes": [
+                "tiddlywiki/vanilla",
+                "tiddlywiki/snowwhite"
+	],
+	"includeWikis": [
+	],
+	"build": {
+		"library": [
+			"--makelibrary","$:/UpgradeLibrary",
+   			"--savelibrarytiddlers","$:/UpgradeLibrary","[prefix[$:/plugins/kookma]]","recipes/library/tiddlers/","$:/UpgradeLibrary/List",
+   			"--savetiddler","$:/UpgradeLibrary/List","recipes/library/tiddlers.json",
+			"--rendertiddler","$:/plugins/tiddlywiki/pluginlibrary/library.template.html","index.html","text/plain"]
+	}
+}

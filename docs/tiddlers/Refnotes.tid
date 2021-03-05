@@ -1,0 +1,12 @@
+code: https://github.com/kookma/TW-Refnotes
+created: 20210226053814165
+demo: https://kookma.github.io/TW-Refnotes/
+modified: 20210226061920099
+name: Refnotes
+tags: plugin
+title: Refnotes
+type: text/vnd.tiddlywiki
+
+Refnotes is a set of macros and stylesheets for creating abbreviations, footnotes, citations. It also makes tables of footnotes, abbreviations (glossary) and references (bibliography table).
+
+Refnotes works with bibtex and can read bibtex entries. For better performance use the official bibtex plugin alongside with Refnotes.

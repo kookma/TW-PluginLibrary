@@ -1,0 +1,18 @@
+code: https://github.com/kookma/TW-Tamasha
+created: 20210226053747853
+demo: https://kookma.github.io/TW-Tamasha/
+modified: 20210226062620062
+name: Tamasha
+tags: plugin
+title: Tamasha
+type: text/vnd.tiddlywiki
+
+Tamasha is a presentation app based on web technology (Html5, CSS, and JS). It has been developed using Tiddlywiki, so it can be used as a single html file and can be opened using any modern browser. This makes Tamasha a quite powerful app. It can be viewed on any operating system (e.g. Linux, Windows, Android, IOS, ...)
+
+;Applications
+Tamasha is quite versatile. It is an html page so whatever you can do with an offline/online single html/webpage you can do with Tamasha.
+
+* Tamasha can be used on desktop or mobile as an offline, private presentation app in a single html file.
+* Tamasha can be used in a private/public network using Node.js
+* Tamasha can be used as an online slideshow app. It can be hosted on GitHub Pages or other online hosts.
+* Tamasha runs on top of Tiddlywiki. So, it inherits all the power of Tiddlywiki.
