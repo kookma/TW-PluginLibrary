@@ -1,0 +1,34 @@
+created: 20200306120555869
+modified: 20200307203718438
+tags: start
+title: Kookma Plugin Library
+type: text/vnd.tiddlywiki
+
+{{Status}}
+
+!! Introduction
+<<<
+This repo contains most useful plugins developed under the name ''Kookma ''for Tiddlywiki 5.
+
+The plugin library introduces a very simple mechanism like Tiddlywiki Official Plugin Library to let select among the published plugins and install any number of them you like.
+<<<
+
+<div style="float:right">[img width=64px [$:/favicon.ico]]</div>
+
+!! How to use (install)
+<<<
+# Simply drag and drop [[$:/config/KookmaPluginLibrary]] to your wiki
+# Open $:/ControlPanel in your wiki
+# Goto Plugins tab
+# Click on the ''Get more plugins'' button
+# Under ''Kookma Plugin Library'' click Open plugin library
+# In the list of plugins appeared, click install on those plugins you like to install in your wiki
+<<<
+
+<<alert info "''Note'': Installing new plugins from Kookma library is similar to installing plugins from Official library.">>
+
+!! Published list
+
+The below list shows which plugins are distributed through [[$:/config/KookmaPluginLibrary]] 
+
+{{Plugins Library List}}

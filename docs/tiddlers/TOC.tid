@@ -1,0 +1,17 @@
+code: 
+created: 20200306130111051
+demo: 
+modified: 20200307172128757
+name: 
+tags: plugin
+title: TOC
+type: text/vnd.tiddlywiki
+
+TOC plugin contains several macros, stylesheets and templates to create table of contents and navigator buttons. In contrast to Tiddlywiki core macros, the TOC plugin has many extra features including
+
+* non recursive two level toc
+* hierarchical navigation
+* exclude feature to exclude a branch or specific entries
+* track and highlight the TOC entry opened from table of contents or by navigation buttons
+
+Like core toc macro, TOC plugin supports also the recursive multi level table of contents, but here, it also support hierarchical navigation.

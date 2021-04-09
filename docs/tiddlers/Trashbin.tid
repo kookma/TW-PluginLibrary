@@ -1,0 +1,10 @@
+code: 
+created: 20200306123420746
+demo: 
+modified: 20200307172128765
+name: 
+tags: plugin
+title: Trashbin
+type: text/vnd.tiddlywiki
+
+The concept behind trash plugin is to have a simple mechanism to move tiddlers to Trashbin and be able to restore them later if required.

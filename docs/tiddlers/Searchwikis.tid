@@ -1,0 +1,15 @@
+code: 
+created: 20200306131239233
+demo: 
+modified: 20200307172128745
+name: 
+tags: plugin
+title: Searchwikis
+type: text/vnd.tiddlywiki
+
+Searchwikis plugin uses index (dataTiddler) to search multiple external Tiddlywikis. It has two parts
+
+# An indexer, to build an index of all tiddlers in an external wiki
+# A search tool to search indexes and display a link to a tiddler found in an external wiki
+
+Then one master wiki can hosts many index tiddlers and lets to search several external wikis through index tiddlers.

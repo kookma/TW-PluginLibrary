@@ -1,0 +1,19 @@
+code: 
+created: 20200306123414338
+demo: 
+modified: 20200307172128749
+name: 
+tags: plugin
+title: Slider
+type: text/vnd.tiddlywiki
+
+Slider is a small plugin to create an ordered set of tiddlers also called ''Trail''.
+
+A trail can be used to create a sequence of selected contents like step by step tutorial, guided help, lessons and similar.
+
+The slider plugin user interface contains four sections
+
+# A sidebar tab called ''Trails'' to manage trails
+# A ''dashboard'' for each trail (where trail structure is managed)
+# Tiddlers in a trail, also called ''slides''
+# A footer tiddler to create sticky footer at the bottom of slides

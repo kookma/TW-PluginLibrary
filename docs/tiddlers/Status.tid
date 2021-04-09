@@ -1,0 +1,7 @@
+created: 20190315074043002
+modified: 20200307172128716
+tags: doc
+title: Status
+type: text/vnd.tiddlywiki
+
+<<dbadge Tiddlywiki 5.1.21+ primary>> <<dbadge License MIT success>> <<dbadge Release "1.0.0" warning>> <<dbadge Status "statble" danger>>

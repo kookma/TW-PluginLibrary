@@ -1,0 +1,10 @@
+code: 
+created: 20200306123431465
+demo: 
+modified: 20200307172128761
+name: 
+tags: plugin
+title: Todolist
+type: text/vnd.tiddlywiki
+
+Todolist is a tiny Tiddlywiki plugin for creating simple todolist. In any tiddler you wish to have the Todolist simply call `todolist-ui` macro. Details are given below.

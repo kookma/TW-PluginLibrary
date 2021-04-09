@@ -1,0 +1,22 @@
+code: 
+created: 20200306131100538
+demo: 
+modified: 20200307172128737
+name: 
+tags: plugin
+title: Pinboard
+type: text/vnd.tiddlywiki
+
+This is a plugin to create a pinboard
+
+* a pinboard contains some notices pinned on a board
+* a notice is a tiddler tagged with `pin`
+* a notice is removed from board if it is tagged with `done`
+* a notice has a priority. The priority of a notice tiddler is set through adding a field entitled `priority`
+* The priority filed value can only be chosen from the below value
+** red
+** blue
+** green
+** yellow
+* The priority actually set the color of pin and the background color of note
+* If the priority field is missed the white color is used!
