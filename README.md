@@ -11,7 +11,7 @@ Some of useful plugins in this library are
 
  1. Tiddler Commander
  2. Shiraz
- 3. Todo list
+ 3. Todolist
  4. Trashbin
  5. Favorites
  6. Searchwikis
@@ -22,6 +22,7 @@ Some of useful plugins in this library are
 11. TOC
 12. Vote
 13. Tamasha
+14. Refnotes
 
 
 To see plugins in their own repo see [Kookma Tiddlywiki Repositories](https://github.com/kookma?tab=repositories&q=tiddlywiki&type=&language=)
