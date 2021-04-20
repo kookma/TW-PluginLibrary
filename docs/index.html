@@ -10131,7 +10131,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.21" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.2.0" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.21" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.2.1" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
@@ -10377,13 +10377,6 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "tags": "$:/tags/Macro",
             "type": "text/vnd.tiddlywiki",
             "text": "\\define tc(src:\"\", color:\"red\") &lt;span style=\"color:$color$;\"&gt;$src$&lt;/span&gt;\n\\define bc(src:\"\", color:\"yellow\") &lt;span style=\"background-color:$color$;\"&gt;$src$&lt;/span&gt;\n\\define mono(src:\"\", class:\"\") &lt;code class=\"mono $class$\"&gt;$src$&lt;/code&gt;\n\\define transform(case:\"\", src:\"\", class:\"\") &lt;span class=\"text-$case$ $class$\"&gt;$src$&lt;/span&gt;"
-        },
-        "$:/plugins/kookma/shiraz/plugin.info": {
-            "title": "$:/plugins/kookma/shiraz/plugin.info",
-            "text": "{\n    \"title\": \"$:/plugins/kookma/shiraz\",\n    \"name\": \"Shiraz\",\n    \"description\": \"extended markups, styles, images, tables, and macros\",\n    \"author\": \"Mohammad Rahmani\",\n    \"version\": \"2.2.0\",\n    \"core-version\": \"&gt;=5.1.23\",\n    \"source\": \"https://github.com/kookma/TW-Shiraz\",\n    \"list\": \"readme license history\",\n    \"plugin-type\": \"plugin\",\n    \"dependents\": \"\"\n}",
-            "type": "application/json",
-            "created": "20210226190904213",
-            "modified": "20210304204702977"
         },
         "$:/plugins/kookma/shiraz/readme": {
             "title": "$:/plugins/kookma/shiraz/readme",
@@ -10698,9 +10691,9 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         },
         "$:/plugins/kookma/shiraz/styles/notebook": {
             "title": "$:/plugins/kookma/shiraz/styles/notebook",
-            "text": "@media print{\n  .notebook .tc-tiddler-body {\n    padding-left:60px;\n    margin-top:25px;\n  }\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper {\n    padding-left:60px;\n  }\n}\n\n@media screen{\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper,\n\t.notebook .tc-tiddler-body {\n    padding-left:30px;\n  }\n\n}\t\n\n@media screen and (max-width:960px) {\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n    .notebook .tc-tags-wrapper,\n    .notebook .tc-tiddler-body {\n    padding-left:60px;\n  }\n\n}\n\n.notebook:before {\n    content: '';\n    position: absolute;\n    top: 0; bottom: 0; left: 0;\n    width: 50px;\n    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;\n    background-size: 30px 30px;\n    border-right: 3px solid #D44147;\n\t  z-index:1;\n}\n\n.notebook .tc-tiddler-body {\n\t  position: relative;\n    background: linear-gradient(transparent, transparent 1.95em, #91D1D3 1.95em);\n    background-size: 2em 2em;\n\t  min-height:90px;   \n}\n\n.notebook .tc-tiddler-body{\n\t   padding-top:20px;\n     font-family: \"Handlee\", cursive;\n     font-weight:300;\n     line-height:2em;\n     color:#696969;\n}\n\n/* Setting font for other elements */\n.notebook .tc-tiddler-body pre,\n.notebook .tc-tiddler-body code,\n.notebook .tc-tiddler-body pre code\n{\n  font-family: \"Handlee\", cursive;\n  font-weight:300;\n}",
-            "created": "20180412105446259",
-            "modified": "20210225164757468",
+            "text": "@media print{\n  .notebook .tc-tiddler-body {\n    padding-left:60px;\n    margin-top:25px;\n  }\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper {\n    padding-left:60px;\n  }\n}\n\n@media screen{\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper,\n\t.notebook .tc-tiddler-body {\n    padding-left:30px;\n  }\n\n}\t\n\n@media screen and (max-width:960px) {\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n    .notebook .tc-tags-wrapper,\n    .notebook .tc-tiddler-body {\n    padding-left:60px;\n  }\n\n}\n/*prevent applying left border in edit mode */\n.notebook:not([data-tiddler-title^=\"Draft of\"]):before {\n    content: '';\n    position: absolute;\n    top: 0; bottom: 0; left: 0;\n    width: 50px;\n    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;\n    background-size: 30px 30px;\n    border-right: 3px solid #D44147;\n\t  z-index:1;\n}\n\n.notebook .tc-tiddler-body {\n\t  position: relative;\n    background: linear-gradient(transparent, transparent 1.95em, #91D1D3 1.95em);\n    background-size: 2em 2em;\n\t  min-height:90px;   \n}\n\n.notebook .tc-tiddler-body{\n\t   padding-top:20px;\n     font-family: \"Handlee\", cursive;\n     font-weight:300;\n     line-height:2em;\n     color:#696969;\n}\n\n/* Setting font for other elements */\n.notebook .tc-tiddler-body pre,\n.notebook .tc-tiddler-body code,\n.notebook .tc-tiddler-body pre code\n{\n  font-family: \"Handlee\", cursive;\n  font-weight:300;\n}",
+            "created": "20210420164111716",
+            "modified": "20210420165330739",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
