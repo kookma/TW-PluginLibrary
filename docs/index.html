@@ -10131,16 +10131,16 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.21" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.2.1" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.2.2" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
             "title": "$:/plugins/kookma/shiraz/history",
             "created": "20210225163850252",
-            "modified": "20210226190112050",
+            "modified": "20210422150531494",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
+            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.2.2'' -- 2021.04.22 -- several issues fixed for pagination, notebook and image classes\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
         },
         "$:/plugins/kookma/shiraz/license": {
             "title": "$:/plugins/kookma/shiraz/license",
@@ -10273,10 +10273,10 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/plugins/kookma/shiraz/macros/image-basic": {
             "title": "$:/plugins/kookma/shiraz/macros/image-basic",
             "created": "20181119183704246",
-            "modified": "20210225164756991",
+            "modified": "20210422135918382",
             "tags": "$:/tags/Macro",
             "type": "text/vnd.tiddlywiki",
-            "text": "\\define image-basic(img, width:\"30%\", align:\"none\", caption:\"\", tooltip:\"\", alt:\"\")\n&lt;figure class=\"image-simple image-align-$align$\" style=\"width:$width$;\"&gt;\n  &lt;$image source=&lt;&lt;__img__&gt;&gt; tooltip=&lt;&lt;__tooltip__&gt;&gt; alt=&lt;&lt;__alt__&gt;&gt; /&gt; \n  &lt;figcaption&gt;$caption$&lt;/figcaption&gt;\n&lt;/figure&gt; \n\\end"
+            "text": "\\define image-basic(img, width:\"30%\", align:\"none\", caption:\"\", tooltip:\"\", alt:\"\")\n&lt;figure class=\"image-basic image-align-$align$\" style=\"width:$width$;\"&gt;\n  &lt;$image source=&lt;&lt;__img__&gt;&gt; tooltip=&lt;&lt;__tooltip__&gt;&gt; alt=&lt;&lt;__alt__&gt;&gt; /&gt; \n  &lt;figcaption&gt;$caption$&lt;/figcaption&gt;\n&lt;/figure&gt; \n\\end"
         },
         "$:/plugins/kookma/shiraz/macros/image-card-utility": {
             "title": "$:/plugins/kookma/shiraz/macros/image-card-utility",
@@ -10391,6 +10391,15 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "text": ".leftbar{\n  border-width:0px !important;\n  border-radius:0px !important;\n  border-left-width: 5px !important;\n}",
             "created": "20181208184228896",
             "modified": "20210225164757108",
+            "tags": "$:/tags/Stylesheet",
+            "type": "text/css"
+        },
+        "$:/plugins/kookma/shiraz/styles/bglowtone-colors": {
+            "title": "$:/plugins/kookma/shiraz/styles/bglowtone-colors",
+            "text": "/* Colors taked from [1] https://www.bg-w3schools.bg-com/colors/colors_names.bg-asp \n[2] http://www.bg-workwithcolor.bg-com/color-chart-full-01.bg-htm*/\n/*Low tone background colors*/\n.bg-mistyrose{background-color:#ffe4e1;}\n.bg-lemonchiffon{background-color:#fffacd;}\n.bg-lavenderblush{background-color:#fff0f5;}\n.bg-lavender{background-color:#e6e6fa;}\n.bg-honeydew{background-color:#f0fff0;}\n.bg-lightcyan{background-color:#e0ffff;}\n.bg-aliceblue{background-color:#f0f8ff;}\n.bg-cornsilk{background-color:#fff8dc;}\n.bg-gainsboro{background-color:#dcdcdc;}\n.bg-bisque{background-color:#ffe4c4;}\n.bg-snow{background-color:#fffafa;}",
+            "created": "20181029071532524",
+            "list": "mistyrose lemonchiffon lavenderblush lavender honeydew lightcyan aliceblue cornsilk gainsboro bisque snow",
+            "modified": "20210422142201838",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
@@ -10572,9 +10581,9 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         },
         "$:/plugins/kookma/shiraz/styles/dynamic-tables": {
             "title": "$:/plugins/kookma/shiraz/styles/dynamic-tables",
-            "text": "/* edit-text box for dynamic table */\n.shiraz-dtable-textbox {\n    width:100%;\n    padding-left: 5px;\n    border: none;\n}\n\n.shiraz-dtable-textbox:focus {\n    outline: none;\n    border: 1px solid #5778d8;\n    background: transparent;\n}\n\n.tbl-inpt-edit { width: 100%; background-color: transparent; border: none; color: #000000;}\n\nbutton.tbl-sort-svg &gt; svg { text-shadow: none; fill:#000000; height:10px; padding:0 0 2px 0; }\n\nth .tc-tiddlylink, th a { text-shadow: none; margin: 0 0 0 0; padding: 0 0 0 0; color:#000000; font-weight: bold; }\n\n\n/* DELETE CONFIRMATION */\ntable thead .tbl-delete-confirm &gt; th {\n  color: white;\n  background-color:#ff0033;\n  padding: 8px;\n  margin: 0px;\n  text-align:center;\n\tfont-weight:normal;\n}\n\ntable thead .tbl-delete-confirm &gt; th &gt; button {\n  color: white;\n  fill: white;\n}\n\n/* -- pagination --*/\n.shiraz-dtable-page-footer td{\n\tmargin: 0 0 0 0;\n\tpadding: 4px 7px 4px 7px;\n\tvertical-align: middle !important;\n}\n\n.shiraz-dtable-page-footer select{\n\tpadding:0;\n\tmargin:0;\n\tborder:none;\t\n}\n\n.shiraz-dtable-page-footer {\n\ttext-align:center;\n}\n\n.shiraz-dtable-page-prev{\n\tfloat:left;\n}\n\n.shiraz-dtable-page-next{\n\tfloat:right;\n}\n\n.shiraz-dtable-page-footer button svg {height:0.7em;}\n.shiraz-dtable-page-footer button {outline: none;}\n.shiraz-dtable-page-footer button:disabled {display:none;}\n",
+            "text": "/* edit-text box for dynamic table */\n.shiraz-dtable-textbox {\n    width:100%;\n    padding-left: 5px;\n    border: none;\n}\n\n.shiraz-dtable-textbox:focus {\n    outline: none;\n    border: 1px solid #5778d8;\n    background: transparent;\n}\n\n.tbl-inpt-edit { width: 100%; background-color: transparent; border: none; color: #000000;}\n\nbutton.tbl-sort-svg &gt; svg { text-shadow: none; fill:#000000; height:10px; padding:0 0 2px 0; }\n\nth .tc-tiddlylink, th a { text-shadow: none; margin: 0 0 0 0; padding: 0 0 0 0; color:#000000; font-weight: bold; }\n\n\n/* DELETE CONFIRMATION */\ntable thead .tbl-delete-confirm &gt; th {\n  color: white;\n  background-color:#ff0033;\n  padding: 8px;\n  margin: 0px;\n  text-align:center;\n\tfont-weight:normal;\n}\n\ntable thead .tbl-delete-confirm &gt; th &gt; button {\n  color: white;\n  fill: white;\n}\n\n/* -- pagination --*/\n.shiraz-dtable-page-footer td{\n\tmargin: 0 0 0 0;\n\tpadding: 4px 7px 4px 7px;\n}\n\n.shiraz-dtable-page-footer select{\n\tpadding:0;\n\tmargin:0;\n\tborder:none;\t\n}\n\n.shiraz-dtable-page-footer {\n\ttext-align:center;\n}\n\n.shiraz-dtable-page-prev{\n\tfloat:left;\n\tmargin-right:8px;\n}\n\n.shiraz-dtable-page-next{\n\tfloat:right;\n\tmargin-left:8px;\n}\n\n.shiraz-dtable-page-footer button svg {height:0.7em;}\n.shiraz-dtable-page-footer button {outline: none; line-height:normal;}\n.shiraz-dtable-page-footer button:disabled {display:none;}\n",
             "created": "20191128184537594",
-            "modified": "20210226184239698",
+            "modified": "20210422145422562",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
@@ -10588,9 +10597,9 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         },
         "$:/plugins/kookma/shiraz/styles/image-basic": {
             "title": "$:/plugins/kookma/shiraz/styles/image-basic",
-            "text": ".image-simple {\n  text-align: center;\n  font-style: italic;\n  font-size: smaller;\n  text-indent: 0;\n  padding: 0.5em;\n}",
+            "text": ".image-basic {\n  text-align: center;\n  font-style: italic;\n  font-size: smaller;\n  text-indent: 0;\n  padding: 0.5em;\n}",
             "created": "20181119182848505",
-            "modified": "20210225164757335",
+            "modified": "20210422135912304",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
@@ -10694,15 +10703,6 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "text": "@media print{\n  .notebook .tc-tiddler-body {\n    padding-left:60px;\n    margin-top:25px;\n  }\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper {\n    padding-left:60px;\n  }\n}\n\n@media screen{\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n\t.notebook .tc-tags-wrapper,\n\t.notebook .tc-tiddler-body {\n    padding-left:30px;\n  }\n\n}\t\n\n@media screen and (max-width:960px) {\n  .notebook .tc-tiddler-title,\n  .notebook .tc-subtitle,\n    .notebook .tc-tags-wrapper,\n    .notebook .tc-tiddler-body {\n    padding-left:60px;\n  }\n\n}\n/*prevent applying left border in edit mode */\n.notebook:not([data-tiddler-title^=\"Draft of\"]):before {\n    content: '';\n    position: absolute;\n    top: 0; bottom: 0; left: 0;\n    width: 50px;\n    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;\n    background-size: 30px 30px;\n    border-right: 3px solid #D44147;\n\t  z-index:1;\n}\n\n.notebook .tc-tiddler-body {\n\t  position: relative;\n    background: linear-gradient(transparent, transparent 1.95em, #91D1D3 1.95em);\n    background-size: 2em 2em;\n\t  min-height:90px;   \n}\n\n.notebook .tc-tiddler-body{\n\t   padding-top:20px;\n     font-family: \"Handlee\", cursive;\n     font-weight:300;\n     line-height:2em;\n     color:#696969;\n}\n\n/* Setting font for other elements */\n.notebook .tc-tiddler-body pre,\n.notebook .tc-tiddler-body code,\n.notebook .tc-tiddler-body pre code\n{\n  font-family: \"Handlee\", cursive;\n  font-weight:300;\n}",
             "created": "20210420164111716",
             "modified": "20210420165330739",
-            "tags": "$:/tags/Stylesheet",
-            "type": "text/css"
-        },
-        "$:/plugins/kookma/shiraz/styles/semantic/bglowtone-colors": {
-            "title": "$:/plugins/kookma/shiraz/styles/semantic/bglowtone-colors",
-            "text": "/* Colors taked from [1] https://www.bg-w3schools.bg-com/colors/colors_names.bg-asp \n[2] http://www.bg-workwithcolor.bg-com/color-chart-full-01.bg-htm*/\n/*Low tone background colors*/\n.bg-mistyrose{background-color:#ffe4e1;}\n.bg-lemonchiffon{background-color:#fffacd;}\n.bg-lavenderblush{background-color:#fff0f5;}\n.bg-lavender{background-color:#e6e6fa;}\n.bg-honeydew{background-color:#f0fff0;}\n.bg-lightcyan{background-color:#e0ffff;}\n.bg-aliceblue{background-color:#f0f8ff;}\n.bg-cornsilk{background-color:#fff8dc;}\n.bg-gainsboro{background-color:#dcdcdc;}\n.bg-bisque{background-color:#ffe4c4;}\n.bg-snow{background-color:#fffafa;}",
-            "created": "20181029071532524",
-            "list": "mistyrose lemonchiffon lavenderblush lavender honeydew lightcyan aliceblue cornsilk gainsboro bisque snow",
-            "modified": "20210225164757477",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
