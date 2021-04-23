@@ -16,16 +16,17 @@
     },
     {
         "title": "$:/plugins/kookma/favorites",
-        "description": "Favorites",
+        "name": "Favorites",
+        "description": "create bookmarks, shortcuts and favorite items as flat and structured lists",
         "author": "Mohammad Rahmani",
-        "version": "4.4.0",
-        "core-version": ">=5.1.22",
+        "version": "4.5.0",
+        "core-version": ">=5.1.23",
         "source": "https://github.com/kookma/TW-Favorites",
-        "list": "readme history license",
-        "dependents": "",
+        "list": "readme license history",
         "plugin-type": "plugin",
+        "dependents": "",
         "type": "application/json",
-        "readme": "; Favorites\nA favorite item also called a bookmark is a shortcut, you are creating for quick access to it. You can access that bookmark at any time and view that as many times as you want without having to search and find it again.\n\n''Favorites plugin'' is a set of tool for creating favorites (bookmarks) in Tiddlywiki. Each favorite item is a shortcut to a tiddler.\n\nThe Favorites plugin contains three modes\n\n* ''flat mode'': one favorite list, no folder\n* ''structured mode'': use folder, search tool, export and delete tool\n* ''frozen list'': read only, simple table of content style\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Favorites/\n* Code: https://github.com/kookma/TW-Favorites\n",
+        "readme": "; Favorites\nA favorite item also called a bookmark is a shortcut, you are creating for quick access to it. You can access that bookmark at any time and view that as many times as you want without having to search and find it again.\n\nFavorites plugin is a set of tool for creating favorites (bookmarks) in Tiddlywiki. Each favorite item is a shortcut to a tiddler.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Favorites/\n* Code: https://github.com/kookma/TW-Favorites\n",
         "requires-reload": "no"
     },
     {
