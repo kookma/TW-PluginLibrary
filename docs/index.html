@@ -10155,16 +10155,16 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.0" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.1" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
             "title": "$:/plugins/kookma/shiraz/history",
             "created": "20210225163850252",
-            "modified": "20210510180258564",
+            "modified": "20210519173721072",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.3.0'' -- 2021.05.10 -- switch palette for dim/dark and light palette selection\n* ''2.2.2'' -- 2021.04.22 -- several issues fixed for pagination, notebook and image classes\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
+            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.3.1'' -- 2021.05.19 -- tbl-linktype template to be used for generating node-explorer\n* ''2.3.0'' -- 2021.05.10 -- switch palette for dim/dark and light palette selection\n* ''2.2.2'' -- 2021.04.22 -- several issues fixed for pagination, notebook and image classes\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
         },
         "$:/plugins/kookma/shiraz/images/color-switch": {
             "title": "$:/plugins/kookma/shiraz/images/color-switch",
@@ -10869,6 +10869,15 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "type": "text/vnd.tiddlywiki",
             "text": "&lt;$reveal type=\"nomatch\" state=&lt;&lt;tempPathExpand&gt;&gt; text=\"show\" tag=\"td\"&gt;\n  &lt;$button class=\"tc-btn-invisible tc-tiddlylink\"&gt;\n    &lt;$action-setfield $tiddler=&lt;&lt;tempTableExpand&gt;&gt; $index=&lt;&lt;currentRecord&gt;&gt; $value=\"show\" /&gt;\n    {{$:/core/images/right-arrow}}\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n&lt;$reveal type=\"match\" state=&lt;&lt;tempPathExpand&gt;&gt; text=\"show\" tag=\"td\"&gt;\n  &lt;$button class=\"tc-btn-invisible tc-tiddlylink\"&gt;\n    &lt;$action-setfield $tiddler=&lt;&lt;tempTableExpand&gt;&gt; $index=&lt;&lt;currentRecord&gt;&gt;/&gt;\n    {{$:/core/images/down-arrow}}\n  &lt;/$button&gt;\n&lt;/$reveal&gt;"
         },
+        "$:/plugins/kookma/shiraz/templates/body/tbl-linktype": {
+            "title": "$:/plugins/kookma/shiraz/templates/body/tbl-linktype",
+            "created": "20210501184147078",
+            "modified": "20210518184756053",
+            "tags": "$:/tags/Table/BodyTemplate",
+            "tbl-column-list": "tbl-linktype",
+            "type": "text/vnd.tiddlywiki",
+            "text": "&lt;td&gt;\n&lt;$text text={{{ [all[current]links[]match&lt;currentRecord&gt;then[link]] :else[all[current]backlinks[]match&lt;currentRecord&gt;then[backlink]else[tagging]] }}} /&gt;\n&lt;/td&gt;\n&lt;!-- \ntb-linktype is not sortable not editable\n--&gt;"
+        },
         "$:/plugins/kookma/shiraz/templates/body/title": {
             "title": "$:/plugins/kookma/shiraz/templates/body/title",
             "created": "20170128100357203",
@@ -10966,26 +10975,35 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "type": "text/vnd.tiddlywiki",
             "text": "&lt;th style=\"width:28px;\"&gt;\n  &lt;$list filter=\"[&lt;tempTableExpand&gt;indexes[]limit[1]]\"&gt;\n      &lt;$button class=\"tc-btn-invisible\"&gt;{{$:/core/images/fold-button}}\n        &lt;$action-setfield $tiddler=&lt;&lt;tempTableExpand&gt;&gt; text=\"\"/&gt;\n      &lt;/$button&gt;\n  &lt;/$list&gt;\n&lt;/th&gt;"
         },
-        "$:/plugins/kookma/shiraz/ui/Button/SwitchPalette": {
-            "title": "$:/plugins/kookma/shiraz/ui/Button/SwitchPalette",
+        "$:/plugins/kookma/shiraz/templates/header/tbl-linktype": {
+            "title": "$:/plugins/kookma/shiraz/templates/header/tbl-linktype",
+            "created": "20210517200330994",
+            "modified": "20210518185154370",
+            "tags": "$:/tags/Table/HeaderTemplate",
+            "tbl-column-list": "tbl-linktype",
+            "type": "text/vnd.tiddlywiki",
+            "text": "&lt;th  style=\"width:32px;text-align:center;cursor:default;\"&gt;Linktype&lt;/th&gt;\n&lt;!-- \ntb-linktype is not sortable not editable\n--&gt;"
+        },
+        "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette": {
+            "title": "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette",
             "created": "20201210171047824",
             "dark-palette": "$:/palettes/SolarFlare",
             "description": "Toggle between light/dark colour palette",
             "light-palette": "$:/palettes/Vanilla",
-            "modified": "20210511112334880",
+            "modified": "20210518040210266",
             "tags": "$:/tags/PageControls",
             "type": "text/vnd.tiddlywiki",
-            "text": "&lt;$vars \ndarkPalette={{$:/plugins/kookma/shiraz/ui/Button/SwitchPalette!!dark-palette}}\nlightPalette={{$:/plugins/kookma/shiraz/ui/Button/SwitchPalette!!light-palette}}\n&gt; \n&lt;$button tooltip=\"Switch colours\" aria-label=\"Switch colours\" class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n  &lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;match[yes]]\"&gt;\n    {{$:/plugins/kookma/shiraz/images/color-switch}}\n  &lt;/$list&gt;\n\n  &lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;match[yes]]\"&gt;\n    &lt;span class=\"tc-btn-text\"&gt;Switch colours&lt;/span&gt;\n  &lt;/$list&gt;\n\n  &lt;$reveal type=\"match\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt; \n    &lt;$action-setfield $tiddler=\"$:/palette\"    text=&lt;&lt;lightPalette&gt;&gt; /&gt;\n  &lt;/$reveal&gt;\n  &lt;$reveal type=\"nomatch\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n    &lt;$action-setfield $tiddler=\"$:/palette\"         text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n  &lt;/$reveal&gt;\n&lt;/$button&gt;\n&lt;/$vars&gt;\n\n{{$:/plugins/kookma/shiraz/ui/Button/SwitchPalette!!dark-palette}}"
+            "text": "\\whitespace trim\n&lt;$vars \ndarkPalette={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!dark-palette}}\nlightPalette={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!light-palette}}\n&gt; \n&lt;$button tooltip=\"Switch colours\" aria-label=\"Switch colours\" class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n  &lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;match[yes]]\"&gt;\n    {{$:/plugins/kookma/shiraz/images/color-switch}}\n  &lt;/$list&gt;\n\n  &lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;match[yes]]\"&gt;\n    &lt;span class=\"tc-btn-text\"&gt;Switch colours&lt;/span&gt;\n  &lt;/$list&gt;\n\n  &lt;$reveal type=\"match\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt; \n    &lt;$action-setfield $tiddler=\"$:/palette\"    text=&lt;&lt;lightPalette&gt;&gt; /&gt;\n  &lt;/$reveal&gt;\n  &lt;$reveal type=\"nomatch\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n    &lt;$action-setfield $tiddler=\"$:/palette\"         text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n  &lt;/$reveal&gt;\n&lt;/$button&gt;\n&lt;/$vars&gt;\n\n{{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!dark-palette}}"
         },
         "$:/plugins/kookma/shiraz/ui/ControlPanel/Settings": {
             "title": "$:/plugins/kookma/shiraz/ui/ControlPanel/Settings",
             "caption": "Shiraz",
             "created": "20191018054657077",
             "list-after": "$:/core/ui/ControlPanel/Settings/TiddlyWiki",
-            "modified": "20210511112319943",
+            "modified": "20210518040210196",
             "tags": "$:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar",
             "type": "text/vnd.tiddlywiki",
-            "text": "These settings let you customise the behaviour of Shiraz plugin.\n\n---\n\n;Show Shiraz setting in more sidebar\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/ui/ControlPanel/Settings\" tag=\"$:/tags/MoreSideBar\"&gt; Show setting in more sidebar&lt;/$checkbox&gt;\n\n;Options\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/multicols/storyriver\" tag=\"$:/tags/Stylesheet\"&gt; Multicolumn story river&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/ui-buttons\" tag=\"$:/tags/Stylesheet\"&gt; Colorful UI buttons&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/tiddler-button-visibility\" tag=\"$:/tags/Stylesheet\"&gt; Tiddler visibility on mouse hover&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/edit-buttons\" tag=\"$:/tags/Stylesheet\"&gt; Traffic lights for edit toolbar buttons&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/colorful-sidebar-tab\" tag=\"$:/tags/Stylesheet\"&gt; Colorify sidebar tabs&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/ui/Button/SwitchPalette\" tag=\"$:/tags/PageControls\"&gt; Show switch palette on page controls&lt;/$checkbox&gt;\n\n&lt;$list filter=\"[[$:/plugins/kookma/shiraz/ui/Button/SwitchPalette]contains:tags[$:/tags/PageControls]]\"&gt;\n\n;Set dark and light palette\n{{$:/plugins/kookma/shiraz/ui/set-dark-light-palette}}\n&lt;/$list&gt;\n\n"
+            "text": "These settings let you customise the behaviour of Shiraz plugin.\n\n---\n\n;Show Shiraz setting in more sidebar\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/ui/ControlPanel/Settings\" tag=\"$:/tags/MoreSideBar\"&gt; Show setting in more sidebar&lt;/$checkbox&gt;\n\n;Options\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/multicols/storyriver\" tag=\"$:/tags/Stylesheet\"&gt; Multicolumn story river&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/ui-buttons\" tag=\"$:/tags/Stylesheet\"&gt; Colorful UI buttons&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/tiddler-button-visibility\" tag=\"$:/tags/Stylesheet\"&gt; Tiddler visibility on mouse hover&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/misc/edit-buttons\" tag=\"$:/tags/Stylesheet\"&gt; Traffic lights for edit toolbar buttons&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/styles/colorful-sidebar-tab\" tag=\"$:/tags/Stylesheet\"&gt; Colorify sidebar tabs&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette\" tag=\"$:/tags/PageControls\"&gt; Show switch palette on page controls&lt;/$checkbox&gt;\n\n&lt;$list filter=\"[[$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette]contains:tags[$:/tags/PageControls]]\"&gt;\n\n;Set dark and light palette\n{{$:/plugins/kookma/shiraz/ui/set-dark-light-palette}}\n&lt;/$list&gt;\n\n"
         },
         "$:/plugins/kookma/shiraz/ui/set-dark-light-palette": {
             "title": "$:/plugins/kookma/shiraz/ui/set-dark-light-palette",
@@ -11209,16 +11227,6 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "type": "text/vnd.tiddlywiki",
             "text": "\\define wikitext-example(src)\n&lt;div class=\"doc-example\"&gt;\n\n&lt;$macrocall $name=\"copy-to-clipboard-above-right\" src=&lt;&lt;__src__&gt;&gt;/&gt;\n\n```\n$src$\n```\n\nThat renders as:\n\n$src$\n\n... and the underlying HTML is:\n\n$$$text/vnd.tiddlywiki&gt;text/html\n$src$\n$$$\n&lt;/div&gt;\n\\end\n\n\\define wikitext-example-without-html(src)\n&lt;div class=\"doc-example\"&gt;\n\n&lt;$macrocall $name=\"copy-to-clipboard-above-right\" src=&lt;&lt;__src__&gt;&gt;/&gt;\n\n```\n$src$\n```\n\nThat renders as:\n\n$src$\n&lt;/div&gt;\n\\end\n&lt;!--\n; Credit\n:Jeremy Ruston TW 5.1.18\n\nThe wiki-text macros are set of macro for documenting TW codes.\n--&gt;"
         },
-        "$:/plugins/kookma/utility/pagecontrol/view-fields-button": {
-            "title": "$:/plugins/kookma/utility/pagecontrol/view-fields-button",
-            "caption": "{{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Buttons/Utility/Caption}}",
-            "created": "20181010190533135",
-            "description": "Show a toggle button for view fields",
-            "modified": "20200403115112475",
-            "tags": "$:/tags/PageControls",
-            "type": "text/vnd.tiddlywiki",
-            "text": "\\define viewtemplateTid() $:/plugins/kookma/utility/viewtemplate/view-fields\n\\define fldshowstateTid() $:/keepstate/utility/toggle-view-fields\n\n\\define show-fields-button()\n\\whitespace trim\n\n&lt;$reveal type=\"nomatch\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"show\" \n\t         tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t\t aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t\t class=&lt;&lt;tv-config-toolbar-class&gt;&gt; &gt;\n    &lt;&lt;disp-on-pagecontrols&gt;&gt;\n    &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"$:/tags/ViewTemplate\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\n&lt;$reveal type=\"match\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"hide\" \n           tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t   aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t   class=\"\"\"$(tv-config-toolbar-class)$ tc-selected\"\"\"&gt;\n     &lt;&lt;disp-on-pagecontrols&gt;&gt;\n     &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\\end\n\n\\define disp-on-pagecontrols() \n&lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\"&gt;\n{{$:/plugins/kookma/utility/images/view-fields.svg}}  \n&lt;/$list&gt;\n&lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;prefix[yes]]\"&gt;\n&lt;span class=\"tc-btn-text\"&gt;&lt;$text text={{$:/language/Buttons/Utility/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n\n&lt;&lt;show-fields-button&gt;&gt;"
-        },
         "$:/plugins/kookma/utility/readme": {
             "title": "$:/plugins/kookma/utility/readme",
             "created": "20190930044127683",
@@ -11269,15 +11277,25 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
+        "$:/plugins/kookma/utility/ui/Buttons/ViewFields": {
+            "title": "$:/plugins/kookma/utility/ui/Buttons/ViewFields",
+            "caption": "{{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Buttons/Utility/Caption}}",
+            "created": "20181010190533135",
+            "description": "Show a toggle button for view fields",
+            "modified": "20210518040658188",
+            "tags": "$:/tags/PageControls",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\\define viewtemplateTid() $:/plugins/kookma/utility/viewtemplate/view-fields\n\\define fldshowstateTid() $:/keepstate/utility/toggle-view-fields\n\n\\define show-fields-button()\n\\whitespace trim\n\n&lt;$reveal type=\"nomatch\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"show\" \n\t         tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t\t aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t\t class=&lt;&lt;tv-config-toolbar-class&gt;&gt; &gt;\n    &lt;&lt;disp-on-pagecontrols&gt;&gt;\n    &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"$:/tags/ViewTemplate\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\n&lt;$reveal type=\"match\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"hide\" \n           tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t   aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t   class=\"\"\"$(tv-config-toolbar-class)$ tc-selected\"\"\"&gt;\n     &lt;&lt;disp-on-pagecontrols&gt;&gt;\n     &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\\end\n\n\\define disp-on-pagecontrols() \n&lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\"&gt;\n{{$:/plugins/kookma/utility/images/view-fields.svg}}  \n&lt;/$list&gt;\n&lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;prefix[yes]]\"&gt;\n&lt;span class=\"tc-btn-text\"&gt;&lt;$text text={{$:/language/Buttons/Utility/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n\n&lt;&lt;show-fields-button&gt;&gt;"
+        },
         "$:/plugins/kookma/utility/ui/ControlPanel/Settings": {
             "title": "$:/plugins/kookma/utility/ui/ControlPanel/Settings",
             "caption": "Utility",
             "created": "20190930212747824",
             "list-after": "$:/core/ui/ControlPanel/Settings/TiddlyWiki",
-            "modified": "20200322091210028",
+            "modified": "20210518040658129",
             "tags": "$:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar",
             "type": "text/vnd.tiddlywiki",
-            "text": "These settings let you customise the behaviour of Utility plugin.\n\n---\n\n;Show Utility setting in more sidebar\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/ui/ControlPanel/Settings\" tag=\"$:/tags/MoreSideBar\"&gt; Show setting in more sidebar&lt;/$checkbox&gt;\n\n;Options\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/pagecontrol/view-fields-button\" tag=\"$:/tags/PageControls\"&gt; Enable show fields&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/styles/tw-version\" tag=\"$:/tags/Stylesheet\"&gt; Show the Tiddlywiki version badge&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content\" tag=\"$:/tags/ViewTemplate\"&gt; Display the tiddler raw content&lt;/$checkbox&gt;&lt;div style=\"padding-left:18px;\"&gt;\n&lt;$list filter=\"[[$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content]tags[]search[$:/tags/ViewTemplate]]\" variable=ignore&gt;\nFilters to reveal tiddlers content &amp;nbsp; &lt;$edit-text tiddler=\"$:/plugins/kookma/utility/config/reveal-tags\" field=\"text\" tag=input defualt=\"\" placeholder=\"enter a filter e.g. [tag[myTag]] \" class=\"kk-ut-txt\"/&gt;\n&lt;/$list&gt;&lt;/div&gt;\n\n"
+            "text": "These settings let you customise the behaviour of Utility plugin.\n\n---\n\n;Show Utility setting in more sidebar\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/ui/ControlPanel/Settings\" tag=\"$:/tags/MoreSideBar\"&gt; Show setting in more sidebar&lt;/$checkbox&gt;\n\n;Options\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/ui/Buttons/ViewFields\" tag=\"$:/tags/PageControls\"&gt; Enable show fields&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/styles/tw-version\" tag=\"$:/tags/Stylesheet\"&gt; Show the Tiddlywiki version badge&lt;/$checkbox&gt;\n:&lt;$checkbox tiddler=\"$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content\" tag=\"$:/tags/ViewTemplate\"&gt; Display the tiddler raw content&lt;/$checkbox&gt;&lt;div style=\"padding-left:18px;\"&gt;\n&lt;$list filter=\"[[$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content]tags[]search[$:/tags/ViewTemplate]]\" variable=ignore&gt;\nFilters to reveal tiddlers content &amp;nbsp; &lt;$edit-text tiddler=\"$:/plugins/kookma/utility/config/reveal-tags\" field=\"text\" tag=input defualt=\"\" placeholder=\"enter a filter e.g. [tag[myTag]] \" class=\"kk-ut-txt\"/&gt;\n&lt;/$list&gt;&lt;/div&gt;\n\n"
         },
         "$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content": {
             "title": "$:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content",
@@ -11293,7 +11311,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "created": "20181010162537613",
             "description": "Toggle field handling in view mode",
             "list-after": "$:/core/ui/ViewTemplate/tags",
-            "modified": "20210409144300064",
+            "modified": "20210518040710381",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
             "text": "&lt;$vars newFieldNameTiddler=&lt;&lt;qualify \"$:/temp/NewFieldName\"&gt;&gt;\nnewFieldValueTiddler=&lt;&lt;qualify \"$:/temp/NewFieldValue\"&gt;&gt;  \nsearchListState=&lt;&lt;qualify \"$:/temp/searchListState\"&gt;&gt; \nstoreTitle=&lt;&lt;qualify \"$:/temp/storeTitle\"&gt;&gt; \n&gt;\n&lt;$transclude tiddler=\"$:/core/ui/EditTemplate/fields\"/&gt;\n&lt;/$vars&gt;"
