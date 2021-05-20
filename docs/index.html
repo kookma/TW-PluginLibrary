@@ -10155,16 +10155,16 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.2" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.3" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
             "title": "$:/plugins/kookma/shiraz/history",
             "created": "20210225163850252",
-            "modified": "20210520061118043",
+            "modified": "20210520131001717",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.3.2'' -- 2021.05.20 -- small bug fixes in switch palette\n* ''2.3.1'' -- 2021.05.19 -- tbl-linktype template to be used for generating node-explorer\n* ''2.3.0'' -- 2021.05.10 -- switch palette for dim/dark and light palette selection\n* ''2.2.2'' -- 2021.04.22 -- several issues fixed for pagination, notebook and image classes\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
+            "text": "Full change log:  [[https://kookma.github.io/TW-Shiraz/#ChangeLog]]\n\n* ''2.3.3'' -- 2021.05.20 -- small bug fixes in switch palette\n* ''2.3.1'' -- 2021.05.19 -- tbl-linktype template to be used for generating node-explorer\n* ''2.3.0'' -- 2021.05.10 -- switch palette for dim/dark and light palette selection\n* ''2.2.2'' -- 2021.04.22 -- several issues fixed for pagination, notebook and image classes\n* ''2.2.0'' -- 2021.02.26 -- upated to TW 5.1.23 and pagination added to dynamic tables\n* ''2.1.1'' -- 2020.03.25 -- slider macro with initial status\n* ''2.1.0'' -- 2020.03.23 -- stable release on TW-5.1.22pre\n* ''1.0.0'' -- 2018.10.05 -- first public release\n"
         },
         "$:/plugins/kookma/shiraz/images/color-switch": {
             "title": "$:/plugins/kookma/shiraz/images/color-switch",
@@ -10986,15 +10986,15 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         },
         "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette": {
             "title": "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette",
+            "caption": "{{$:/plugins/kookma/shiraz/images/color-switch}} {{$:/language/Buttons/Shiraz/Caption}}",
             "created": "20201210171047824",
             "dark-palette": "$:/palettes/SolarFlare",
             "description": "Toggle between light/dark colour palette",
             "light-palette": "$:/palettes/Vanilla",
-            "list-after": "$:/plugins/kookma/utility/ui/Buttons/ViewFields",
-            "modified": "20210520061343748",
+            "modified": "20210520130725115",
             "tags": "$:/tags/PageControls",
             "type": "text/vnd.tiddlywiki",
-            "text": "\\whitespace trim\n&lt;$vars \ndarkPalette ={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!dark-palette}}\nlightPalette={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!light-palette}}\n&gt; \n&lt;$button tooltip=\"Switch colours\" aria-label=\"Switch colours\" class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;\n  &lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;match[yes]]\"&gt;\n    {{$:/plugins/kookma/shiraz/images/color-switch}}\n  &lt;/$list&gt;\n\n  &lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;match[yes]]\"&gt;\n    &lt;span class=\"tc-btn-text\"&gt;Switch colours&lt;/span&gt;\n  &lt;/$list&gt;\n\n  &lt;$reveal type=\"match\" state=\"$:/palette\"  text=&lt;&lt;darkPalette&gt;&gt;  &gt; \n    &lt;$action-setfield $tiddler=\"$:/palette\" text=&lt;&lt;lightPalette&gt;&gt; /&gt;\n  &lt;/$reveal&gt;\n  &lt;$reveal type=\"nomatch\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n    &lt;$action-setfield $tiddler=\"$:/palette\"  text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n  &lt;/$reveal&gt;\n&lt;/$button&gt;\n&lt;/$vars&gt;"
+            "text": "\\whitespace trim\n&lt;$vars \ndarkPalette ={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!dark-palette}}\nlightPalette={{$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette!!light-palette}}\n&gt; \n&lt;$button \n  tooltip={{$:/language/Buttons/Shiraz/Hint}} \n  aria-label={{$:/language/Buttons/Shiraz/Caption}} \n  class=&lt;&lt;tv-config-toolbar-class&gt;&gt;\n&gt;\n  &lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;match[yes]]\"&gt;\n    {{$:/plugins/kookma/shiraz/images/color-switch}}\n  &lt;/$list&gt;\n\n  &lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;match[yes]]\"&gt;\n    &lt;span class=\"tc-btn-text\"&gt;Switch colours&lt;/span&gt;\n  &lt;/$list&gt;\n\n  &lt;$reveal type=\"match\" state=\"$:/palette\"  text=&lt;&lt;darkPalette&gt;&gt;  &gt; \n    &lt;$action-setfield $tiddler=\"$:/palette\" text=&lt;&lt;lightPalette&gt;&gt; /&gt;\n  &lt;/$reveal&gt;\n  &lt;$reveal type=\"nomatch\" state=\"$:/palette\" text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n    &lt;$action-setfield $tiddler=\"$:/palette\"  text=&lt;&lt;darkPalette&gt;&gt;  &gt;\n  &lt;/$reveal&gt;\n&lt;/$button&gt;\n&lt;/$vars&gt;"
         },
         "$:/plugins/kookma/shiraz/ui/ControlPanel/Settings": {
             "title": "$:/plugins/kookma/shiraz/ui/ControlPanel/Settings",
@@ -11027,14 +11027,14 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
     }
 }</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="tools for developers and authors" list="readme history license" name="Utility" plugin-type="plugin" source="https://github.com/kookma/TW-Utility" title="$:/plugins/kookma/utility" type="application/json" version="2.1.4" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.24" dependents="" description="Small tools for authors and developers" list="readme license history" name="Utility" plugin-type="plugin" source="https://github.com/kookma/TW-Utility" title="$:/plugins/kookma/utility" type="application/json" version="2.1.6" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/utility/author/author-tools": {
             "title": "$:/plugins/kookma/utility/author/author-tools",
             "created": "20190912082519234",
             "key": "((author-tools))",
-            "modified": "20200316130508400",
+            "modified": "20210520135718576",
             "tags": "$:/tags/KeyboardShortcut",
             "type": "text/vnd.tiddlywiki",
             "text": "&lt;$action-sendmessage $message=\"tm-modal\" $param=\"$:/plugins/kookma/utility/author/modal\" /&gt;"
@@ -11069,7 +11069,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "title": "$:/plugins/kookma/utility/author/switch-author",
             "created": "20200315203327216",
             "key": "((switch-author))",
-            "modified": "20200316130423198",
+            "modified": "20210520135718587",
             "tags": "$:/tags/KeyboardShortcut",
             "type": "text/vnd.tiddlywiki",
             "text": "\\import $:/plugins/kookma/utility/author/tools\n\n&lt;$reveal type=nomatch state=&lt;&lt;configTid&gt;&gt; text=\"\"&gt;\n&lt;&lt;unhide-elements&gt;&gt;\n&lt;/$reveal&gt;\n&lt;$reveal type=match state=&lt;&lt;configTid&gt;&gt; text=\"\" default=\"\"&gt;\n&lt;&lt;hide-elements&gt;&gt;\n&lt;/$reveal&gt;"
@@ -11093,7 +11093,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/config/ShortcutInfo/author-tools": {
             "title": "$:/config/ShortcutInfo/author-tools",
             "created": "20190912083358612",
-            "modified": "20200316123519558",
+            "modified": "20210520135718623",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
             "text": "Show Author tools dialog"
@@ -11101,31 +11101,31 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/config/ShortcutInfo/switch-author": {
             "title": "$:/config/ShortcutInfo/switch-author",
             "created": "20200315203528401",
-            "modified": "20200316123455880",
+            "modified": "20210520135718641",
             "type": "text/vnd.tiddlywiki",
             "text": "Toggle the author-reader mode"
         },
         "$:/config/shortcuts/author-tools": {
             "title": "$:/config/shortcuts/author-tools",
             "created": "20191121050813703",
-            "modified": "20200316123531677",
+            "modified": "20210520135718631",
             "type": "text/vnd.tiddlywiki",
             "text": "ctrl-alt-A"
         },
         "$:/config/shortcuts/switch-author": {
             "title": "$:/config/shortcuts/switch-author",
             "created": "20200315203409995",
-            "modified": "20200316123545221",
+            "modified": "20210520135718649",
             "type": "text/vnd.tiddlywiki",
             "text": "ctrl+alt+L"
         },
         "$:/plugins/kookma/utility/history": {
             "title": "$:/plugins/kookma/utility/history",
             "created": "20190930044127683",
-            "modified": "20210409142806322",
+            "modified": "20210520143148996",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "* ''2.1.4'' -- 2021.04.09 -- new viewtemplate for show fields used\n* ''2.1.2'' -- 2020.04.03 -- page control button issue fixed\n* ''2.1.1'' -- 2020.03.25 -- page control button improved and minor issues in css fixed\n* ''2.1.0'' -- 2020.03.23 -- new transclusion output for fields macro and disable drag and drop globally\n* ''2.0.0'' -- 2020.03.16 -- new author-reader mode switch\n* ''1.8.0'' -- 2020.03.13 -- admin panel added\n* ''1.7.0'' -- 2020.02.23 -- show tiddler raw content including the macros on demand\n* ''1.0.0'' -- 2019.10.13 -- stable release\n* ''0.5.0'' -- 2019.10.10 -- first beta release"
+            "text": "* ''2.1.6'' -- 2021.05.20 -- bug fixes, new state tiddler for view fields\n* ''2.1.4'' -- 2021.04.09 -- new viewtemplate for show fields used\n* ''2.1.2'' -- 2020.04.03 -- page control button issue fixed\n* ''2.1.1'' -- 2020.03.25 -- page control button improved and minor issues in css fixed\n* ''2.1.0'' -- 2020.03.23 -- new transclusion output for fields macro and disable drag and drop globally\n* ''2.0.0'' -- 2020.03.16 -- new author-reader mode switch\n* ''1.8.0'' -- 2020.03.13 -- admin panel added\n* ''1.7.0'' -- 2020.02.23 -- show tiddler raw content including the macros on demand\n* ''1.0.0'' -- 2019.10.13 -- stable release\n* ''0.5.0'' -- 2019.10.10 -- first beta release"
         },
         "$:/plugins/kookma/utility/images/view-fields.svg": {
             "title": "$:/plugins/kookma/utility/images/view-fields.svg",
@@ -11138,7 +11138,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/language/Buttons/Utility/Caption": {
             "title": "$:/language/Buttons/Utility/Caption",
             "created": "20190930171340202",
-            "modified": "20191111154125886",
+            "modified": "20210520135718612",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
             "text": "show fields"
@@ -11146,7 +11146,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/language/Buttons/Utility/Hint": {
             "title": "$:/language/Buttons/Utility/Hint",
             "created": "20190930171301401",
-            "modified": "20191111154125882",
+            "modified": "20210520135718597",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
             "text": "Show fields"
@@ -11231,10 +11231,10 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/plugins/kookma/utility/readme": {
             "title": "$:/plugins/kookma/utility/readme",
             "created": "20190930044127683",
-            "modified": "20200322194049962",
+            "modified": "20210520140912417",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "; Utility plugin\nThe utility plugin objective is to provide set of tools for developers and authors. These tools includes simple transclusions, show raw contents of tiddlers, author tools, wikitext macros, show fields in view mode, ...\n\n; Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Utility/\n* Code: https://github.com/kookma/TW-Utility\n"
+            "text": "; Utility plugin\nThe utility plugin objective is to provide set of tools for authors. These tools includes simple transclusions, show raw contents of tiddlers, author tools, wikitext macros, show fields in view mode, and much more!\n\n; Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Utility/\n* Code: https://github.com/kookma/TW-Utility\n"
         },
         "$:/plugins/kookma/utility/snippet/macrocall-wikitext-example": {
             "title": "$:/plugins/kookma/utility/snippet/macrocall-wikitext-example",
@@ -11283,10 +11283,11 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "caption": "{{$:/plugins/kookma/utility/images/view-fields.svg}} {{$:/language/Buttons/Utility/Caption}}",
             "created": "20181010190533135",
             "description": "Show a toggle button for view fields",
-            "modified": "20210518040658188",
+            "list-before": "$:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette",
+            "modified": "20210520141427208",
             "tags": "$:/tags/PageControls",
             "type": "text/vnd.tiddlywiki",
-            "text": "\\define viewtemplateTid() $:/plugins/kookma/utility/viewtemplate/view-fields\n\\define fldshowstateTid() $:/keepstate/utility/toggle-view-fields\n\n\\define show-fields-button()\n\\whitespace trim\n\n&lt;$reveal type=\"nomatch\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"show\" \n\t         tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t\t aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t\t class=&lt;&lt;tv-config-toolbar-class&gt;&gt; &gt;\n    &lt;&lt;disp-on-pagecontrols&gt;&gt;\n    &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"$:/tags/ViewTemplate\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\n&lt;$reveal type=\"match\" state=&lt;&lt;fldshowstateTid&gt;&gt; text=\"show\"&gt;\n  &lt;$button set=&lt;&lt;fldshowstateTid&gt;&gt; setTo=\"hide\" \n           tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t   aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t   class=\"\"\"$(tv-config-toolbar-class)$ tc-selected\"\"\"&gt;\n     &lt;&lt;disp-on-pagecontrols&gt;&gt;\n     &lt;$action-setfield $tiddler=&lt;&lt;viewtemplateTid&gt;&gt; tags=\"\"/&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\\end\n\n\\define disp-on-pagecontrols() \n&lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\"&gt;\n{{$:/plugins/kookma/utility/images/view-fields.svg}}  \n&lt;/$list&gt;\n&lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;prefix[yes]]\"&gt;\n&lt;span class=\"tc-btn-text\"&gt;&lt;$text text={{$:/language/Buttons/Utility/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n\n&lt;&lt;show-fields-button&gt;&gt;"
+            "text": "\\define stateTid() $:/state/utility/view-fields\n\n\\define show-fields-button()\n\\whitespace trim\n\n&lt;$reveal type=\"nomatch\" state=&lt;&lt;stateTid&gt;&gt; text=\"show\" default=\"hide\"&gt;\n  &lt;$button set=&lt;&lt;stateTid&gt;&gt; setTo=\"show\" \n\t         tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t\t aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t\t class=&lt;&lt;tv-config-toolbar-class&gt;&gt; &gt;\n    &lt;&lt;disp-on-pagecontrols&gt;&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\n&lt;$reveal type=\"match\" state=&lt;&lt;stateTid&gt;&gt; text=\"show\" default=\"hide\"&gt;\n  &lt;$button set=&lt;&lt;stateTid&gt;&gt; setTo=\"hide\" \n           tooltip={{$:/language/Buttons/Utility/Hint}} \n\t\t\t\t   aria-label={{$:/language/Buttons/Utility/Caption}} \n\t\t\t\t   class=\"\"\"$(tv-config-toolbar-class)$ tc-selected\"\"\"&gt;\n     &lt;&lt;disp-on-pagecontrols&gt;&gt;\n  &lt;/$button&gt;\n&lt;/$reveal&gt;\n\\end\n\n\\define disp-on-pagecontrols() \n&lt;$list filter=\"[&lt;tv-config-toolbar-icons&gt;prefix[yes]]\"&gt;\n{{$:/plugins/kookma/utility/images/view-fields.svg}}  \n&lt;/$list&gt;\n&lt;$list filter=\"[&lt;tv-config-toolbar-text&gt;prefix[yes]]\"&gt;\n&lt;span class=\"tc-btn-text\"&gt;&lt;$text text={{$:/language/Buttons/Utility/Caption}}/&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n\n&lt;&lt;show-fields-button&gt;&gt;"
         },
         "$:/plugins/kookma/utility/ui/ControlPanel/Settings": {
             "title": "$:/plugins/kookma/utility/ui/ControlPanel/Settings",
@@ -11312,10 +11313,10 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "created": "20181010162537613",
             "description": "Toggle field handling in view mode",
             "list-after": "$:/core/ui/ViewTemplate/tags",
-            "modified": "20210518040710381",
-            "tags": "",
+            "modified": "20210520132401305",
+            "tags": "$:/tags/ViewTemplate",
             "type": "text/vnd.tiddlywiki",
-            "text": "&lt;$vars newFieldNameTiddler=&lt;&lt;qualify \"$:/temp/NewFieldName\"&gt;&gt;\nnewFieldValueTiddler=&lt;&lt;qualify \"$:/temp/NewFieldValue\"&gt;&gt;  \nsearchListState=&lt;&lt;qualify \"$:/temp/searchListState\"&gt;&gt; \nstoreTitle=&lt;&lt;qualify \"$:/temp/storeTitle\"&gt;&gt; \n&gt;\n&lt;$transclude tiddler=\"$:/core/ui/EditTemplate/fields\"/&gt;\n&lt;/$vars&gt;"
+            "text": "&lt;$reveal type=match stateTiddler stateTitle=\"$:/state/utility/view-fields\" stateField=text default=\"hide\" text=show&gt;\n&lt;$vars newFieldNameTiddler=&lt;&lt;qualify \"$:/temp/NewFieldName\"&gt;&gt;\nnewFieldValueTiddler=&lt;&lt;qualify \"$:/temp/NewFieldValue\"&gt;&gt;  \nsearchListState=&lt;&lt;qualify \"$:/temp/searchListState\"&gt;&gt; \nstoreTitle=&lt;&lt;qualify \"$:/temp/storeTitle\"&gt;&gt; \n&gt;\n&lt;$transclude tiddler=\"$:/core/ui/EditTemplate/fields\"/&gt;\n&lt;/$vars&gt;\n&lt;/$reveal&gt;"
         }
     }
 }</pre>
