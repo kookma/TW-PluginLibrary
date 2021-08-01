@@ -10155,7 +10155,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.3" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.1.23" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.3.4" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
@@ -10872,11 +10872,11 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
         "$:/plugins/kookma/shiraz/templates/body/tbl-linktype": {
             "title": "$:/plugins/kookma/shiraz/templates/body/tbl-linktype",
             "created": "20210501184147078",
-            "modified": "20210518184756053",
+            "modified": "20210801155443743",
             "tags": "$:/tags/Table/BodyTemplate",
             "tbl-column-list": "tbl-linktype",
             "type": "text/vnd.tiddlywiki",
-            "text": "&lt;td&gt;\n&lt;$text text={{{ [all[current]links[]match&lt;currentRecord&gt;then[link]] :else[all[current]backlinks[]match&lt;currentRecord&gt;then[backlink]else[tagging]] }}} /&gt;\n&lt;/td&gt;\n&lt;!-- \ntb-linktype is not sortable not editable\n--&gt;"
+            "text": "&lt;td&gt;\n&lt;$text text={{{ [all[current]links[]match&lt;currentRecord&gt;then[link]] [all[current]backlinks[]match&lt;currentRecord&gt;then[backlink]] [all[current]tagging[]match&lt;currentRecord&gt;then[tagging]] ~[[transclusion]] }}} /&gt;\n&lt;/td&gt;\n&lt;!-- \ntb-linktype is not sortable not editable. The priority is as below:\nlink, backlink, tagging, transclusion\n--&gt;"
         },
         "$:/plugins/kookma/shiraz/templates/body/title": {
             "title": "$:/plugins/kookma/shiraz/templates/body/title",
