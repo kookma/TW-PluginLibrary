@@ -92,12 +92,12 @@
         "name": "Shiraz",
         "description": "extended markups, styles, images, tables, and macros",
         "author": "Mohammad Rahmani",
-        "version": "2.3.4",
-        "core-version": ">=5.1.23",
+        "version": "2.4.0",
+        "core-version": ">=5.2.0",
         "source": "https://github.com/kookma/TW-Shiraz",
         "list": "readme license history",
-        "plugin-type": "plugin",
         "dependents": "",
+        "plugin-type": "plugin",
         "type": "application/json",
         "readme": "; Shiraz\nShiraz is a small framework of stylesheets, templates and macros to create stylish contents in Tiddlywiki.  Shiraz has customized elements like alerts, cards, panels, images, static tables, dynamic tables, badges, texts, etc. Shiraz uses some modified CSS classes from [[Bootstrap|https://getbootstrap.com/]] 4.3.1.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Shiraz/\n* Code: https://github.com/kookma/TW-Shiraz\n",
         "requires-reload": "no"
@@ -143,6 +143,21 @@
         "dependents": "",
         "type": "application/json",
         "readme": "; Tamasha\nTamasha is a presentation app based on Tiddlywiki 5.1.23+\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Tamasha/\n* Code: https://github.com/kookma/TW-Tamasha\n",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/kookma/thinkup",
+        "name": "Thinkup",
+        "description": "The Zettelkasten method of note taking with Tiddlywiki",
+        "author": "Mohammad Rahmani",
+        "version": "0.1.0",
+        "core-version": ">=5.1.23",
+        "source": "",
+        "list": "readme license history",
+        "plugin-type": "plugin",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "; Shiraz[use correct name]\ndescribe what is the plugin in one paragraph\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-???/\n* Code: https://github.com/kookma/TW-???\n",
         "requires-reload": "no"
     },
     {
