@@ -10155,7 +10155,7 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
 </div>
-<div author="Mohammad Rahmani" core-version="&gt;=5.2.0" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.4.2" revision="0" bag="default">
+<div author="Mohammad Rahmani" core-version="&gt;=5.2.0" dependents="" description="extended markups, styles, images, tables, and macros" list="readme license history" name="Shiraz" plugin-type="plugin" source="https://github.com/kookma/TW-Shiraz" title="$:/plugins/kookma/shiraz" type="application/json" version="2.4.3" revision="0" bag="default">
 <pre>{
     "tiddlers": {
         "$:/plugins/kookma/shiraz/history": {
@@ -10206,6 +10206,14 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "type": "text/vnd.tiddlywiki",
             "text": "\\define card(header:\"Empty\", title:\"Empty\" subtitle:\"Empty\" text:\"Empty\",footer:\"Empty\", width:\"100%\" class:\"\")\n&lt;div class=\"card mb-3 $class$\" style=\"width:$width$;\"&gt;\n&lt;$reveal tag=\"div\" type=\"nomatch\" default=\"Empty\" text=&lt;&lt;__header__&gt;&gt; &gt;\n   &lt;div class=\"card-header\"&gt;$header$&lt;/div&gt;\n&lt;/$reveal&gt;\n&lt;div class=\"card-body\"&gt;\n &lt;$reveal tag=\"div\" type=\"nomatch\" default=\"Empty\" text=&lt;&lt;__title__&gt;&gt; &gt;\n   &lt;div class=\"h5 card-title\"&gt;$title$&lt;/div&gt;\n &lt;/$reveal&gt;\n &lt;$reveal tag=\"div\" type=\"nomatch\" default=\"Empty\" text=&lt;&lt;__subtitle__&gt;&gt; &gt;\n   &lt;div class=\"h6 card-subtitle mb-2 text-muted\"&gt;$subtitle$&lt;/div&gt;\n &lt;/$reveal&gt;\n &lt;$reveal tag=\"div\" type=\"nomatch\" default=\"Empty\" text=&lt;&lt;__text__&gt;&gt; &gt;\n    &lt;div class=\"card-text\"&gt;&lt;&lt;__text__&gt;&gt;&lt;/div&gt;\n &lt;/$reveal&gt;\n&lt;/div&gt;\n&lt;$reveal tag=\"div\" type=\"nomatch\" default=\"Empty\" text=&lt;&lt;__footer__&gt;&gt; &gt;\n   &lt;div class=\"card-footer text-muted\"&gt;$footer$&lt;/div&gt;\n&lt;/$reveal&gt;\n&lt;/div&gt;\n\\end"
         },
+        "$:/plugins/kookma/shiraz/macros/csvtables/apps": {
+            "title": "$:/plugins/kookma/shiraz/macros/csvtables/apps",
+            "created": "20210913061439446",
+            "modified": "20210914163550428",
+            "tags": "$:/tags/Macro",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\\define nomenclature(id:nomenclature)\n&lt;&lt;table-csv id:\"$id$\" format:\"katex-inline transclude pu\"  class:\"table-borderless\" header:no&gt;&gt;\n\\end\n\n\\define mathbox(id:\"\", format:\"\", delimiter:\",\")\n&lt;&lt;table-csv id:\"$id$\" format:\"transclude katex $format$\"  class:\"table-borderless table-mathbox\" header:no delimiter:\"\"\"$delimiter$\"\"\"&gt;&gt;\n\\end\n\n\n&lt;!-- \n- these macros uses the table-csv to display nice looking outputs\n- apps means application\n--&gt;"
+        },
         "$:/plugins/kookma/shiraz/macros/csvtables/formats-basic": {
             "title": "$:/plugins/kookma/shiraz/macros/csvtables/formats-basic",
             "created": "20210910071657253",
@@ -10222,13 +10230,21 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "type": "text/vnd.tiddlywiki",
             "text": "\\define date()       &lt;$view field=title tiddler={{{[&lt;entry&gt;splitregexp[\\D+]!is[blank]join[]]}}} format=date template=\"YYYY-0MM-0DD\"/&gt;\n\\define shortdate()  &lt;$view field=title tiddler={{{[&lt;entry&gt;splitregexp[\\D+]!is[blank]join[]]}}} format=date template=\"mmm DDth, YYYY\"/&gt;\n\\define longdate()   &lt;$view field=title tiddler={{{[&lt;entry&gt;splitregexp[\\D+]!is[blank]join[]]}}} format=date template=\"DDD, MMM 0DD, YYYY\"/&gt;\n\n&lt;!-- these macro are used by table-csv to display entries --&gt;"
         },
+        "$:/plugins/kookma/shiraz/macros/csvtables/formats-math": {
+            "title": "$:/plugins/kookma/shiraz/macros/csvtables/formats-math",
+            "created": "20210913061042429",
+            "modified": "20210914124704452",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\\define katex()  &lt;span class=\"falign\"&gt;&lt;$latex text=&lt;&lt;entry&gt;&gt; displayMode=\"true\"&gt;&lt;/$latex&gt;&lt;/span&gt;\n\\define katex-inline() &lt;$latex text=&lt;&lt;entry&gt;&gt; displayMode=\"false\"&gt;&lt;/$latex&gt;\n\\define pu() &lt;$latex text={{{ [&lt;entry&gt;addprefix[\\pu{]addsuffix[}]] }}} displayMode=\"false\"&gt;&lt;/$latex&gt;\n\\define equation()  &lt;$latex text={{{ [&lt;entry&gt;addprefix[\\begin{equation}]addsuffix[\\end{equation}]] }}} displayMode=\"true\"&gt;&lt;/$latex&gt;\n\n&lt;!-- \n- these macro are used by table-csv to display entries\n- the math formating require the official KaTeX plugin is installed!\n- see $:/plugins/kookma/shiraz/styles/csvtable-katex\n--&gt;"
+        },
         "$:/plugins/kookma/shiraz/macros/csvtables/formats-misc": {
             "title": "$:/plugins/kookma/shiraz/macros/csvtables/formats-misc",
             "created": "20210910072420649",
-            "modified": "20210910081742051",
+            "modified": "20210913204706883",
             "tags": "",
             "type": "text/vnd.tiddlywiki",
-            "text": "\\define email() &lt;a class=\"tc-tiddlylink-external\" href=\"mailto:$(entry)$\" rel=\"noopener noreferrer\" target=\"_blank\"&gt;&lt;&lt;text&gt;&gt;&lt;/a&gt;\n\n\\define rate()\n&lt;$list filter=\"[&lt;entry&gt;split[]match[*]]\" variable=ignore&gt;\n&lt;span class=\"shiraz-star\"&gt;&lt;$transclude tiddler=\"$:/core/images/star-filled\" /&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n\\define katex()  &lt;$latex text=&lt;&lt;entry&gt;&gt; displayMode=\"true\"&gt;&lt;/$latex&gt;\n\\define katex-inline()  &lt;$latex text=&lt;&lt;entry&gt;&gt; displayMode=\"false\"&gt;&lt;/$latex&gt;\n\n&lt;!-- these macro are used by table-csv to display entries --&gt;"
+            "text": "\\define email() &lt;a class=\"tc-tiddlylink-external\" href=\"mailto:$(entry)$\" rel=\"noopener noreferrer\" target=\"_blank\"&gt;&lt;&lt;text&gt;&gt;&lt;/a&gt;\n\n\\define rate()\n&lt;$list filter=\"[&lt;entry&gt;split[]match[*]]\" variable=ignore&gt;\n&lt;span class=\"shiraz-star\"&gt;&lt;$transclude tiddler=\"$:/core/images/star-filled\" /&gt;&lt;/span&gt;\n&lt;/$list&gt;\n\\end\n\n&lt;!-- these macro are used by table-csv to display entries --&gt;"
         },
         "$:/plugins/kookma/shiraz/macros/csvtables/formats-task": {
             "title": "$:/plugins/kookma/shiraz/macros/csvtables/formats-task",
@@ -10632,6 +10648,14 @@ To use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin L
             "text": ".tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {\n    background: none;\n    border: none;\n    border-bottom: solid 1px #737373 !important;\n    font-weight: bold;\n    color: #DB4C3F !important;\n}",
             "created": "20191209105546612",
             "modified": "20210808052511503",
+            "tags": "$:/tags/Stylesheet",
+            "type": "text/css"
+        },
+        "$:/plugins/kookma/shiraz/styles/csvtable-katex": {
+            "title": "$:/plugins/kookma/shiraz/styles/csvtable-katex",
+            "text": ".falign .katex-display &gt; .katex {text-align:left;}\n.ralign .katex-display &gt; .katex {text-align:right;}\n.table-mathbox  tr td{vertical-align: baseline;} /* baseline aligned text and fomula in table cell*/\n\n/*\nOnly used with csv table + katex\nSee $:/plugins/kookma/shiraz/macros/csvtables/formats-math\n*/",
+            "created": "20210913204223405",
+            "modified": "20210914150205318",
             "tags": "$:/tags/Stylesheet",
             "type": "text/css"
         },
