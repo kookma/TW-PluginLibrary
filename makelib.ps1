@@ -4,7 +4,7 @@ Remove-Item 'docs\index.html' -Force -ErrorAction SilentlyContinue
 
 
 # Tiddlywiki select edition: 5.1.21, 5.1.22, fix-syncer
-$edition = "5.1.24"
+$edition = "5.2.0"
 
 # Make library
 node d:/Tiddlywiki/$edition/tiddlywiki.js . --output docs/library --build library
