@@ -107,12 +107,12 @@
         "name": "Shiraz",
         "description": "extended markups, styles, images, tables, and macros",
         "author": "Mohammad Rahmani",
-        "version": "2.4.4",
+        "version": "2.4.5",
         "core-version": ">=5.2.0",
         "source": "https://github.com/kookma/TW-Shiraz",
         "list": "readme license history",
-        "dependents": "",
         "plugin-type": "plugin",
+        "dependents": "",
         "type": "application/json",
         "readme": "; Shiraz\nShiraz is a small framework of stylesheets, templates and macros to create stylish contents in Tiddlywiki.  Shiraz has customized elements like alerts, cards, panels, images, static tables, dynamic tables, badges, texts, etc. Shiraz uses some modified CSS classes from [[Bootstrap|https://getbootstrap.com/]] 4.3.1.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Shiraz/\n* Code: https://github.com/kookma/TW-Shiraz\n",
         "requires-reload": "no"
@@ -165,14 +165,14 @@
         "name": "Thinkup",
         "description": "Personal knowledge management with Tiddlywiki",
         "author": "Mohammad Rahmani",
-        "version": "0.2.3",
+        "version": "0.2.4",
         "core-version": ">=5.2.0",
         "source": "https://github.com/kookma/TW-Thinkup",
         "list": "readme license history",
         "dependents": "",
         "plugin-type": "plugin",
         "type": "application/json",
-        "readme": "; Thinkup\ndescribe what is the plugin in one paragraph\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Thinkup/\n* Code: https://github.com/kookma/TW-Thinkup\n",
+        "readme": "; Thinkup\nThink Up in [[Lexico|https://www.lexico.com/definition/think_up]] means: use one's ingenuity to invent or devise something. Thinkup is a Tiddlywiki plugin uses Zettlekasten method for note taking\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Thinkup/\n* Code: https://github.com/kookma/TW-Thinkup\n",
         "requires-reload": "no"
     },
     {
@@ -233,7 +233,7 @@
         "dependents": "",
         "type": "application/json",
         "readme": "; Todolist\nTodolist is a small pure wikitext plugin, contain all of the tasks that you need to complete on a given day. Todolist gives you the confidence that everything’s organized and accounted for, so you can make progress on the things that are important to you.\n\nYou can also make to-dos for major tasks like a project, a work assignment or an overall goal. Therefore, the overall purpose of creating a to-do is to remember tasks and prioritize them.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Todolist/\n* Code: https://github.com/kookma/TW-Todolist\n",
-        "requires-reload": "no"
+        "requires-reload": "yes"
     },
     {
         "title": "$:/plugins/kookma/trashbin",
