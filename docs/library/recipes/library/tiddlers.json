@@ -78,7 +78,7 @@
         "name": "Search in Fields",
         "description": "Advanced search in fields using regular expression and tabular output",
         "author": "Mohammad Rahmani",
-        "version": "0.5.0",
+        "version": "0.6.0",
         "core-version": ">= 5.2.1",
         "source": "https://github.com/kookma/TW-Search",
         "list": "readme license history",
