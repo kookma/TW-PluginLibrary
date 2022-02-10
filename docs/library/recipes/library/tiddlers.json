@@ -34,7 +34,7 @@
         "name": "Gatha",
         "description": "Plugin maker and content manager",
         "author": "Mohammad Rahmani",
-        "version": "0.6.0",
+        "version": "0.8.0",
         "core-version": ">=5.2.1",
         "source": "https://github.com/kookma/TW-Gatha",
         "list": "",
