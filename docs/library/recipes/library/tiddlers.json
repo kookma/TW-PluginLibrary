@@ -19,7 +19,7 @@
         "name": "Favorites",
         "description": "Create bookmarks, shortcuts and favorite items as flat and structured lists",
         "author": "Mohammad Rahmani",
-        "version": "4.6.1",
+        "version": "4.6.7",
         "core-version": ">=5.2.3",
         "source": "https://github.com/kookma/TW-Favorites",
         "list": "readme license history",
@@ -102,7 +102,7 @@
         "plugin-type": "plugin",
         "dependents": "",
         "type": "application/json",
-        "readme": "; Pikaday\nA date-picker with calendar widget to pick a date and set to `due` field of target tiddler.\n\nThis is a derived plugin from Projectify by [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Pikaday/\n* Code: https://github.com/kookma/TW-Pikaday\n",
+        "readme": "; Pikaday\nA date-picker with calendar widget to pick a date and set to `due` field of target tiddler. This is a derived plugin from Projectify by [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Pikaday/\n* Code: https://github.com/kookma/TW-Pikaday\n",
         "requires-reload": "yes"
     },
     {
@@ -184,7 +184,7 @@
         "description": "extended markups, styles, images, tables, and macros",
         "author": "Mohammad Rahmani",
         "version": "2.5.2",
-        "core-version": ">=5.2.1",
+        "core-version": ">=5.2.2",
         "source": "https://github.com/kookma/TW-Shiraz",
         "list": "readme license history",
         "plugin-type": "plugin",
