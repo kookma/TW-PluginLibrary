@@ -19,14 +19,14 @@
         "name": "Favorites",
         "description": "Create bookmarks, shortcuts and favorite items as flat and structured lists",
         "author": "Mohammad Rahmani",
-        "version": "4.6.9",
+        "version": "4.7.0",
         "core-version": ">=5.2.3",
         "source": "https://github.com/kookma/TW-Favorites",
         "list": "readme license history",
         "plugin-type": "plugin",
         "dependents": "",
         "type": "application/json",
-        "readme": "; Favorites\nA favorite item also called a bookmark is a shortcut, you are creating for quick access to it. You can access that bookmark at any time and view that as many times as you want without having to search and find it again.\n\nFavorites plugin is a set of tool for creating favorites (bookmarks) in Tiddlywiki. Each favorite item is a shortcut to a tiddler.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Favorites/\n* Code: https://github.com/kookma/TW-Favorites",
+        "readme": "; Favorites\nA favorite item also called a bookmark is a shortcut, you are creating for quick access to it. You can access that bookmark at any time and view that as many times as you want without having to search and find it again.\n\nFavorites plugin is a set of tool for creating favorites (bookmarks) in Tiddlywiki. Each favorite item is a shortcut to a tiddler. Favorites can be organized in folders.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Favorites/\n* Code: https://github.com/kookma/TW-Favorites",
         "requires-reload": "no"
     },
     {
