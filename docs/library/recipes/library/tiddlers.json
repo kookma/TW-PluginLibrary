@@ -183,7 +183,7 @@
         "name": "Shiraz",
         "description": "extended markups, styles, images, tables, and macros",
         "author": "Mohammad Rahmani",
-        "version": "2.5.4",
+        "version": "2.6.0",
         "core-version": ">=5.2.2",
         "source": "https://github.com/kookma/TW-Shiraz",
         "list": "readme license history",
@@ -191,6 +191,21 @@
         "dependents": "",
         "type": "application/json",
         "readme": "; Shiraz\nShiraz is a small framework of stylesheets, templates and macros to create stylish contents in Tiddlywiki.  Shiraz has customized elements like alerts, cards, panels, images, static tables, dynamic tables, quick table, badges, texts, etc. Shiraz uses some modified CSS classes from [[Bootstrap|https://getbootstrap.com/]] 4.3.1.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Shiraz/\n* Code: https://github.com/kookma/TW-Shiraz\n",
+        "requires-reload": "no"
+    },
+    {
+        "title": "$:/plugins/kookma/shiraz-formatter",
+        "name": "Shiraz Formatter",
+        "description": "Editor buttons and snippets for Shiraz",
+        "author": "Mohammad Rahmani",
+        "version": "0.1.0",
+        "core-version": ">=5.2.2",
+        "source": "https://github.com/kookma/TW-Shiraz",
+        "list": "readme license history",
+        "plugin-type": "plugin",
+        "dependents": "",
+        "type": "application/json",
+        "readme": "; Shiraz Formatter\nEditor toolbar buttons to format text and insert snippets.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Shiraz/shiraz-formatter.html\n* Code: https://github.com/kookma/TW-Shiraz",
         "requires-reload": "no"
     },
     {
