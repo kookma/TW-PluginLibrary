@@ -80,7 +80,7 @@
         "name": "Kara",
         "description": "Small plain checklist and interstitial journaling",
         "author": "Mohammad Rahmani",
-        "version": "0.7.1",
+        "version": "0.7.3",
         "core-version": ">=5.2.2",
         "source": "https://github.com/kookma/TW-Kara",
         "list": "readme history license",
