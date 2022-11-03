@@ -34,14 +34,14 @@
         "name": "Tiddlywiki Garden",
         "description": "Demonstrate, practice and learn Filters and CSS in TiddlyWiki",
         "author": "Mohammad Rahmani",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "core-version": ">=5.2.3",
         "source": "https://github.com/kookma/TW-Garden",
         "list": "readme license history",
         "plugin-type": "plugin",
         "dependents": "",
         "type": "application/json",
-        "readme": ";Tiddlywiki Garden\nThe garden is used to demonstrate, practice and learn, Filters, Wikitext, and CSS. Tiddlywiki garden ispired from [[CSS Zen Garden|https://en.wikipedia.org/wiki/CSS_Zen_Garden]].\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Garden/\n* Code: https://github.com/kookma/TW-Garden\n",
+        "readme": ";Tiddlywiki Garden\nThe garden is used to demonstrate, practice and learn, Filters, Wikitext, and CSS. Tiddlywiki garden inspired from [[CSS Zen Garden|https://en.wikipedia.org/wiki/CSS_Zen_Garden]].\n\n; Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Garden/\n* Code: https://github.com/kookma/TW-Garden\n",
         "requires-reload": "no"
     },
     {
