@@ -269,17 +269,17 @@
     },
     {
         "title": "$:/plugins/kookma/timelines",
-        "description": "create horizontal and vertical timelines",
         "name": "Timelines",
+        "description": "Graphical representation of a period of time",
         "author": "Mohammad Rahmani",
-        "version": "1.0.0",
-        "core-version": ">=5.1.21",
+        "version": "1.2.0",
+        "core-version": ">=5.2.3",
         "source": "https://github.com/kookma/TW-Timelines",
-        "list": "readme history license",
+        "list": "readme license history",
         "dependents": "",
         "plugin-type": "plugin",
         "type": "application/json",
-        "readme": "; Shiraz[use correct name]\ndescribe what is the plugin in one paragraph\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-???/\n* Code: https://github.com/kookma/TW-???\n",
+        "readme": "; Timelines\nA chronological arrangement of events in the order of their occurrence.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Timelines/\n* Code: https://github.com/kookma/TW-Timelines\n",
         "requires-reload": "no"
     },
     {
