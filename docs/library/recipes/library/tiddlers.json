@@ -209,6 +209,21 @@
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/kookma/shiraz-callout",
+        "name": "Shiraz Callout",
+        "description": "Admonitions for Shiraz",
+        "author": "Mohammad Rahmani",
+        "version": "0.5.0",
+        "core-version": ">=5.2.3",
+        "source": "https://github.com/kookma/TW-Shiraz",
+        "list": "",
+        "plugin-type": "plugin",
+        "dependents": "$:/plugin/kookma/shiraz",
+        "type": "application/json",
+        "readme": "; Shiraz callout\nCallout is used to describe a short piece of text set in a different format than the rest of the page and intended to attract attention. Shiraz callout contains collapsible and non-collapsible callout elements.\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Shiraz/shiraz-callout.html\n* Code: https://github.com/kookma/TW-Shiraz\n",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/kookma/shiraz-formatter",
         "name": "Shiraz Formatter",
         "description": "Editor buttons and snippets for Shiraz",
