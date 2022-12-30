@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-Search
+created: 20221230183029257
+demo: https://kookma.github.io/TW-Search/
+modified: 20221230183123369
+name: Search
+tags: plugin
+title: Search in Fields
+type: text/vnd.tiddlywiki
+
+Advanced search in fields, lets search in any fields with standard method or regular expressions.

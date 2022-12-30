@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-hsl
+created: 20221230182834529
+demo: https://kookma.github.io/TW-hsl/
+modified: 20221230182959546
+name: HSL
+tags: plugin
+title: Highlight Selected Lines
+type: text/vnd.tiddlywiki
+
+This tools is used to highlight selected lines or a range of lines to be standout.

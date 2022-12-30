@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-Shiraz
+created: 20221230183417391
+demo: https://kookma.github.io/TW-Shiraz/shiraz-formatter.html
+modified: 20221230183554048
+name: Shiraz-Formatter
+tags: plugin
+title: Shiraz Formatter
+type: text/vnd.tiddlywiki
+
+Editor toolbar buttons to format text and insert snippets.

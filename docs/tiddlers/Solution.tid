@@ -1,0 +1,10 @@
+code: https://github.com/kookma/TW-Solution
+created: 20221230183229857
+demo: https://kookma.github.io/TW-Solution/
+modified: 20221230183405137
+name: Solution
+tags: plugin
+title: Solution
+type: text/vnd.tiddlywiki
+
+Solution is a small plugin to create solution tiddlers. It adds a button to page controls, on click, creates a tiddler tagged with solution, contains keywords, responder, and url fields. It then uses a view template to show the responder (author), reference post (url), and the keywords in a semantic way.
