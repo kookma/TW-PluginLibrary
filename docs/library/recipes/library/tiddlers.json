@@ -112,7 +112,7 @@
         "name": "Narenj",
         "description": "Sidebar tools for edit and view tiddlers",
         "author": "Mohammad rahmani",
-        "version": "0.2.0",
+        "version": "0.3.0",
         "core-version": ">= 5.2.7",
         "source": "https://github.com/kookma/TW-Narenj",
         "list": "readme license history",
