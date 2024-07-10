@@ -140,6 +140,22 @@
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/kookma/pikaday",
+        "name": "Pikaday",
+        "description": "Date picker from Projectify",
+        "author": "Nicolas Petton, Mohammad Rahmani",
+        "version": "0.7.0",
+        "core-version": ">=5.2.3",
+        "source": "https://github.com/kookma/TW-Pikaday",
+        "list": "readme history license",
+        "plugin-type": "plugin",
+        "dependents": "",
+        "stability": "STABILITY_2_STABLE",
+        "type": "application/json",
+        "readme": "; Pikaday\nA date-picker with calendar widget to pick a date and set to `due` field of target tiddler. This is a derived plugin from Projectify by [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr\n\n;Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Pikaday/\n* Code: https://github.com/kookma/TW-Pikaday\n",
+        "requires-reload": "yes"
+    },
+    {
         "title": "$:/plugins/kookma/pinboard",
         "name": "Pinboard",
         "description": "Create a board to pin messages and pictures",
