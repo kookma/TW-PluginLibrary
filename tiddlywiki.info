@@ -12,7 +12,7 @@
 	"build": {
 		"library": [
 			"--makelibrary","$:/UpgradeLibrary",
-   			"--savelibrarytiddlers","$:/UpgradeLibrary","[prefix[$:/plugins/kookma]remove[$:/plugins/kookma/thinkup]]","recipes/library/tiddlers/","$:/UpgradeLibrary/List",
+   			"--savelibrarytiddlers","$:/UpgradeLibrary","[prefix[$:/plugins/kookma]remove[$:/plugins/kookma/thinkup]remove[$:/plugins/kookma/paliz]]","recipes/library/tiddlers/","$:/UpgradeLibrary/List",
    			"--savetiddler","$:/UpgradeLibrary/List","recipes/library/tiddlers.json",
 			"--rendertiddler","$:/plugins/tiddlywiki/pluginlibrary/library.template.html","index.html","text/plain"]
 	}
