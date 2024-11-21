@@ -460,7 +460,7 @@
     },
     {
         "title": "$:/plugins/kookma/utility",
-        "version": "3.0.2",
+        "version": "3.1.0",
         "stability": "STABILITY_2_STABLE",
         "name": "Utility",
         "description": "Small tools for authors and developers",
@@ -472,7 +472,7 @@
         "dependents": "",
         "plugin-type": "plugin",
         "core-version": ">5.3.5",
-        "packaged-by": "Gatha on 14th November 2024, 22:23:34",
+        "packaged-by": "Gatha on 21st November 2024, 16:13:53",
         "type": "application/json",
         "readme": "; Utility plugin\nThe utility plugin objective is to provide set of tools for authors. These tools includes simple transclusions, show raw contents of tiddlers, reader mode, wikitext macros, show fields in view mode, linkify, code, docit, and much more!\n\n; Code and demo\nFor learning plugin features, syntax, tutorial and examples see the plugin demo and code pages\n\n* Demo: https://kookma.github.io/TW-Utility/\n* Code: https://github.com/kookma/TW-Utility\n",
         "requires-reload": "no",
